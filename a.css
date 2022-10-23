@@ -1,0 +1,154 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
+.social-container {
+    width: 400px;
+    margin: 40vh auto;
+    text-align: center;
+    /* background-color: #fdfdfd; */
+}
+
+.social-icons {
+    padding: 0;
+    list-style: none;
+    margin: 1em;
+}
+
+.social-icons li {
+    display: inline-block;
+    margin: 0.15em;
+    position: relative;
+    font-size: 1.2em;
+}
+.social-icons div {
+    display: inline-block;
+    margin: 0.15em;
+    position: relative;
+    font-size: 1.2em;
+}
+
+.social-icons i {
+    color: #fff;
+    position: absolute;
+    top: 21px;
+    left: 21px;
+    transition: all 265ms ease-out;
+}
+
+.social-icons a {
+    display: inline-block;
+}
+
+.instagram a:before {
+    transform: scale(1);
+    -ms-transform: scale(1);
+    -webkit-transform: scale(1);
+    content: " ";
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    display: block;
+    background: linear-gradient(45deg, #d6a442, #8f008f);
+    transition: all 265ms ease-out;
+}
+
+.facebook a:before {
+    transform: scale(1);
+    -ms-transform: scale(1);
+    -webkit-transform: scale(1);
+    content: " ";
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    display: block;
+    background: linear-gradient(45deg, #1b6ecd, #0c3bbc);
+    transition: all 265ms ease-out;
+}
+
+.social-icons a:hover:before {
+    transform: scale(0);
+    transition: all 265ms ease-in;
+}
+
+.instagram a:hover i {
+    transform: scale(2.2);
+    -ms-transform: scale(2.2);
+    -webkit-transform: scale(2.2);
+    color: #00B5F5;
+    background: -webkit-linear-gradient(45deg, #eba0c5, #a8066a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 265ms ease-in;
+    box-shadow: 0 0 34px 0 #f62929;
+}
+
+.facebook a:hover i {
+    transform: scale(2.2);
+    -ms-transform: scale(2.2);
+    -webkit-transform: scale(2.2);
+    color: #00B5F5;
+    background: -webkit-linear-gradient(45deg, #6b6bd7, #2a11e8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 265ms ease-in;
+    /* color: #00ACED; */
+}
+
+
+/* pop-up text */
+
+.social-icons a span {
+    color: #666;
+    position: absolute;
+    font-family: sans-serif;
+    bottom: 0;
+    left: -25px;
+    right: -25px;
+    padding: 5px 7px;
+    z-index: -1;
+    font-size: 14px;
+    border-radius: 2px;
+    background: #fff;
+    visibility: hidden;
+    opacity: 0;
+    -o-transition: all .5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    -webkit-transition: all .5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    -moz-transition: all .5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    transition: all .5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+
+/* pop-up text arrow */
+
+.social-icons a span:before {
+    content: '';
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid #fff;
+    position: absolute;
+    bottom: -5px;
+    left: 40px;
+}
+
+
+/* text pops up when icon is in hover state */
+
+.social-icons a:hover span {
+    bottom: 50px;
+    visibility: visible;
+    opacity: 1;
+}
+
+
+/* font awesome icons */
+
+
+/* .social-icons a:nth-of-type(1):before {
+    content: '\f09a';
+}
+
+.social-icons a:nth-of-type(2):before {
+    content: '\f099'; */
+
+
+/* } */
